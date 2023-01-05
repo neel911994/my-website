@@ -1,0 +1,36 @@
+/* body {
+
+	color: white;
+	background:black;
+background-image: repeating-linear-gradient(220deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(189deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),repeating-linear-gradient(148deg, rgb(0,0,0) 0px, rgb(0,0,0) 19px,transparent 19px, transparent 22px),linear-gradient(90deg, rgb(30, 169, 65),rgb(158, 25, 173));
+	overflow: hidden;
+	height:100vh; width:100vw;
+
+} */
+
+.line { background-color:white; line-height:1px; padding:0; margin:0; position:absolute; }
+
+.element {
+	font-family:"SFUIDisplay-Regular", sans-serif;
+	letter-spacing: 1.5px;
+	text-transform: lowercase;
+	font-size: x-large;
+	text-align:center;
+	color:#a8b2d1;
+	position:absolute;
+	/*left:-50px; top:-10px;*/
+	left:0; top:0;
+	transform-origin: center center;
+
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+
+}
+
+.lines-canvas {
+	position:absolute;
+	transform-origin: center center;
+	transform: scale(0.8);
+}
+.lines-canvas line{
+	stroke: #020c1b !important;
+}

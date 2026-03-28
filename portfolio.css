@@ -412,6 +412,7 @@
     }
     .main{
       padding: 0px 50px;
+      width: auto;;
     }
     section{
       margin: 0px 0px;
@@ -443,6 +444,51 @@
       align-items: center;
       justify-content: space-around;
       list-style-type: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .company li{
+      padding: 8px 12px;
+      font-size: clamp(0.8rem, 3vw, 1rem);
+      min-width: 30%;
+      text-align: center;
+      border-radius: 0.4rem;
+      background-color: rgba(255,255,255,0.04);
+    }
+
+    .company li.active-tab{
+      background-color: rgba(100,255,218,0.12);
+    }
+
+    .company-details{
+      width: 100%;
+      display: block;
+    }
+
+    .company-details > div{
+      width: 100%;
+      margin-bottom: 1.2rem;
+    }
+
+    .post {
+      padding: 0 1rem;
+    }
+
+    .entry {
+      margin-top: 1.5vh;
+      font-size: clamp(0.9rem, 3vw, 1.05rem);
+    }
+
+    .panel1,
+    .panel2,
+    .panel3 {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.2rem 0.5rem;
     }
     }
   

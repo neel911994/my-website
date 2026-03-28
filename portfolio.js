@@ -60,6 +60,7 @@ function screenCheck() {
 $(document).ready(function(){
     $(".side").hide();
     $(".panel2").hide();
+    $(".panel3").hide();
     
     $(".company li:first").addClass("active-tab");
     $(".company li").on('click',function(){
@@ -68,13 +69,24 @@ $(document).ready(function(){
         if(panel == 1){
             $(".company li:first").addClass("active-tab");
             $(".company li:eq(1)").removeClass("active-tab");
+            $(".company li:eq(2)").removeClass("active-tab");
             $(".panel1").show();
             $(".panel2").hide();
-        }else{
+            $(".panel3").hide();
+        }else if(panel == 2){
             $(".company li:first").removeClass("active-tab");
             $(".company li:eq(1)").addClass("active-tab");
+            $(".company li:eq(2)").removeClass("active-tab");
             $(".panel1").hide();
             $(".panel2").show();
+            $(".panel3").hide();
+        }else if(panel == 3){
+            $(".company li:first").removeClass("active-tab");
+            $(".company li:eq(1)").removeClass("active-tab");
+            $(".company li:eq(2)").addClass("active-tab");
+            $(".panel1").hide();
+            $(".panel2").hide();
+            $(".panel3").show();
         }
     });
 
